@@ -1,4 +1,4 @@
-#(©)NextGenBotz
+ #(©)NextGenBotz
 
 
 
@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7922375491:AAFXM1X6nKbUCvjy1q9o4CuiTU7iXXhpd1A")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "8107103621:AAFf4eYbYDSQxwx37HA0FUYUJK-7YZmVSjk")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "9219444"))
@@ -19,37 +19,37 @@ APP_ID = int(os.environ.get("APP_ID", "9219444"))
 API_HASH = os.environ.get("API_HASH", "9db23f3d7d8e7fc5144fb4dd218c8cc3")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002306179649"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1008107103621"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1014472611"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1579154183"))
 
 #Port
 PORT = os.environ.get("PORT", "3737")
 
 #Database 
-DB_URI = "mongodb+srv://nextgenbotz:5tKVPSjOuKvpTy4q@cluster0.iyifh.mongodb.net/?retryWrites=true&w=majority"
-DB_NAME = os.environ.get("DATABASE_NAME", "idkyami")
+DB_URI = "mongodb+srv://2ndstorebot:<db_password>@cluster0.dhdao.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "Shortxlinks.com")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "699199905e9fa412822d6cdd4e84ba9ad552e78b")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "d3d1ca4ef6b7155a7a714186ea453d3208d4b54c")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
-TUT_VID = os.environ.get("TUT_VID","https://t.me/How_to_download_tutorial_idk/2")
+TUT_VID = os.environ.get("TUT_VID","https://t.me/LM_How_To_Watch_Movie")
 
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002442935049"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002209068416"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002300093961"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002135903431"))
 
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>👋👋 Hey {first} ! </b>\n\n<b>I'm a File Store Bot🤖...! </b>\n\nI Can <b>Store Private Files</b> in Specified Channel and other users can access Private Files From a Special Link....!\n\n⚡<b>Powered By - </b>@NextGenBotz")
+START_MSG = os.environ.get("START_MESSAGE", "<b>👋👋 Hey {first} ! </b>\n\n<b>I'm a File Store Bot🤖...! </b>\n\nI Can <b>Store Private Files</b> in Specified Channel and other users can access Private Files From a Special Link....!\n\n⚡<b>Powered By - </b>@Lonely_Movies")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1014472611").split()):
+    for x in (os.environ.get("ADMINS", "1579154183").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -70,7 +70,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(1014472611)
+ADMINS.append(1579154183)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
